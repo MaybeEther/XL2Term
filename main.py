@@ -24,11 +24,10 @@ sheet = wb.sheet_by_index(0)
 if df.empty:
     print("This File is Empty!!!")
 else:
-    for x in list(df):
+    for x in df.values.flatten().tolist():
         y = len(str(x))
         if y > biggest:
             biggest = y
-    print(biggest)
     for x in range(biggest):
         DASHES = (DASHES + "-")
     for x in list(df):
