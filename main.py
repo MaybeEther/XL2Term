@@ -2,9 +2,8 @@ import sys
 import pandas as pd
 import xlrd
 
-#FILE = sys.argv[1]
+FILE = sys.argv[1]
 
-FILE = "test.xls"
 df = pd.read_excel(FILE)
 FINAL = ("+")
 DASHES = ""
