@@ -1,8 +1,8 @@
 import pandas as pd
 import xlrd
 def TooTerm(file):
-    data = file
-    df = pd.read_excel(data)
+
+    df = pd.read_excel(file)
     final = "+"
     dashes = ""
     spaces = ""
@@ -11,7 +11,7 @@ def TooTerm(file):
     celly = 0
     cellx = 0
     biggest = 0
-    wb = xlrd.open_workbook(data)
+    wb = xlrd.open_workbook(file)
     sheet = wb.sheet_by_index(0)
     if df.empty:
         print("This File is Empty!!!")
